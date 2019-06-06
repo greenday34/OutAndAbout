@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />   
+   <!--
+   CIS155 Spring 2019
+   Project V3
+   
+   Author: Francesca Avellina
+   Date: 2019-5-17
+   
+   Filename: index.html
+   -->
+   <title>Olympic Peninsula Outdoor Adventure</title>
+   <link href="op_reset.css" rel="stylesheet" /> <!-- M3LO1 CSS reset styles. This code overrides default styles in older browsers to 
+                                                    render the element as the develop would like according to newer style rules. -->
+   <link href="op_styles.css" rel="stylesheet" /> 
+  
+</head>
+        
+<body>
+    <header>
+        <h1>Out and About on the Olympic Peninsula</h1>
+        <img class="images" id="top_pic" src="olympics1.jpg" alt="Olympic Mountains" />
+        
+        <!-- Navigation bar under top picture, displayed on each page -->   
+		<nav>
+			<ul>
+                <li> <a href="index.html">Home</a>
+                <li> <a href="ports.html">Ports and Forts</a></li>
+                <li> <a href="parks.html">Parks</a></li>
+                <li> <a href="beaches.html">Beaches</a></li>
+                <li> <a href="dog.html">Dog Friendly</a></li>
+                <li> <a href="about.html">About</a></li>
+            </ul>
+        </nav>
+	</header> 
+   
+     <section>
+       
+	   <!--	M4LO7 Demonstrate the use of image maps, including determining x and y values. This is not finished since 
+            I want to have small pictures overlaying the map for the link.  -->
+        <aside>
+			<blockquote>
+                Everybody needs beauty as well as bread, places to play in and pray in, 
+                where nature may heal and give strength to body and soul. <br/><cite>John Muir</cite>
+            </blockquote>
+        </aside>
+		<article>
+            <!-- M4LO1 Demonstrate the use of figure boxes. This is an element that is a container for images and illustrations.-->
+            <figure>
+                <img class="images" id="OP_Map" src="op_map.jpg" alt="Olympic Map" usemap="#op_map"/> 
+                <figcaption> Olympic Peninsula
+                <p>A few things you might experience in the outdoors. Forest, trees, beaches, rocks, air, water, sunny, cloudy, windy, rainy, snowy, quiet, memories.
+                   A few things you might experience in the outdoors. Forest, trees, beaches, rocks, air, water, sunny, cloudy, windy, rainy, snowy, quiet, memories.
+                   A few things you might experience in the outdoors. Forest, trees, beaches, rocks, air, water, sunny, cloudy, windy, rainy, snowy, quiet, memories. 
+                </p>
+                </figcaption>
+            </figure>
+                     
+          <map name="op_map">
+            <area shape="rect" coords="0,0,82,126" href="ports.html" alt="Port Townsend">
+            <area shape="rect" coords="25,100,55,300" href="parks.html" alt="Elk">
+            <area shape="rect" coords="45,100,125,300" href="beaches.html" alt="Elk">
+            <area shape="rect" coords="85,100,120,300" href="dog.html" alt="Elk">
+          </map>     
+            
+        </article>
+    </section>
+        
+	<footer>
+	  <address>
+      Mosjon Mountain &#10045; 201 Pine Dr.  <!-- M1LO10 Demonstrate the use of special characters from extended character sets. -->
+      &#10045; Poulsbo, WA 98370 &#10045;
+      </address> 
+    </footer>
+   
+</body>
+</html>

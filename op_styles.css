@@ -1,0 +1,406 @@
+@charset "utf-8";
+/*
+   CIS155 Spring 2019
+   Class Project V3
+   
+   TSS Typographic Style Sheet for Class Project, V3
+   Author: Francesca Avellina
+   Date: 2019-5-17
+   
+   Filename: op_styles.css
+*/
+
+
+/* HTML and Body Styles */
+
+  /* {outline: 1px solid red;} */
+
+html  {
+        background-image: url(rain_forest1.jpg);
+        background-size: 100%;
+        background-attachment: fixed;           
+      }
+   
+
+body {
+	   color: ivory;
+	   background-color: rgb(31, 72, 61);
+	   font-family: Palatino, serif;
+       width: 80%;
+       margin: auto;                               /* centering the body on the page */
+       box-shadow: rgb(217,217,217) 5px 5px 105px; 
+	 }
+
+body header img {
+    display: block;
+    width: 100%;
+    }
+
+/* Heading Styles */ 
+
+h1 {
+	font-weight: normal;
+	font-family: Nobile, Verdana, Geneva, sans-serif;
+    font-size: 1.5em;
+	letter-spacing: 0.3em;
+	margin: 0px;
+	text-align: center;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom:10px;
+    text-shadow: 2px 0 2px green;       
+    background-color: rgb(91, 55, 55);
+    display: block;
+    clear: both;                       
+                                          
+   }
+   
+/* Navigation under header picture*/
+
+
+nav ul {
+    display: block;
+    list-style: none;
+    list-style-image: none;
+    float: left;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+   } 
+    
+nav li {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 15%;
+    background-color: rgb(31, 72, 61);
+    border-radius: 30px;                  
+    border: 5px double  rgb(100,150,150);
+    padding: 2px 2px;
+    }
+    
+nav li a {
+    display: block;
+    color: white;
+    padding: 5px 5px;
+    text-decoration: none;
+    }
+nav li a:hover {
+    color: black;
+    background-color: hsl(211, 50%, 80%);
+    border-radius: 30px;       
+    }
+
+
+
+img#top_pic {
+    margin: 0 0 0;
+    height: 50%;
+    width: 100%;
+    }
+                               
+
+/* styles for figure and map image*/
+                       
+img#OP_Map {
+    display: block;        
+    float: left;                          
+    margin: auto;
+    width: 30%;
+    height: 30%;
+    opacity: 0.9;
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%);
+    }
+                           
+img#pt {
+    display: block;
+    float: left;
+    margin: auto;
+    width: 30%;
+    height: 30%;
+    }
+    
+img#beach4 {
+    display: block;
+    float: left;
+    margin: auto;
+    width: 20%;
+    height: 20%;
+    transform: skewY(5deg); 
+    }
+    
+img#eagle {
+    display: block;
+    float: right;          
+    margin: 10px;
+    width: 30%;
+    height: 30%;
+    transform: skewY(-5deg);  
+    }
+    
+img#dog1 {
+    display: block;
+    float: left;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    }
+
+img#dog2 {
+    display: block;
+    float: left;
+    margin: auto;
+    width: 25%;
+    height: 25%;
+    }
+    
+img#dog3 {
+    display: block;
+    float: left;
+    margin: auto;
+    width: 25%;
+    height: 25%;
+    }
+    
+img#dog5 {
+    display: block;
+    float: left;
+    margin: auto;
+    width: 25%;
+    height: 25%;
+    }
+
+img#dog6{
+    display: block;
+    float: right;
+    margin: auto;
+    width: 30%;
+    height: 30%;
+    -webkit-transform: rotateY(180deg);  
+    transform: rotateY(180deg);
+    }                                      
+                                         
+    
+figure {
+    display: table;
+    float: left;
+    padding: 10px;  
+    clear: left; 
+    text-align: left;
+    font-style: italic;
+    width: 100%;
+    }
+figcaption {
+    display: table-caption;
+    caption-side: top;
+    padding: 3px;
+    }
+    
+h2 {
+    width: 100%;
+	padding-top:10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 0;
+    float: left;
+    clear: both;
+	}
+	
+
+/* Aside and Blockquote Styles */
+
+                       
+aside blockquote {
+    float: right;
+    width: 30%;
+	font-size: 1em;
+	font-family: 'Comic Sans MS', cursive;
+	color: rgba(12, 0, 0, 0.75);
+	background-color: rgb(220,240,220);
+	margin: 4px;
+	padding: 4px;
+	quotes: "\201C" "\201D";
+	}
+                                
+blockquote::before {
+	font-weight: bold;
+	font-size: 1.5em;
+	content: open-quote;
+	font-family: 'Times New Roman', Times, serif;
+    }
+blockquote::after {
+	font-weight: bold;
+	font-size: 1.5em;
+	content: close-quote;
+	font-family: 'Times New Roman', Times, serif;
+    }
+
+        
+p#gradient{
+        background: linear-gradient(45deg, green, blue, green);
+        }
+
+
+/*Footer Styles*/
+
+footer address {
+        display: block;
+		background-color: rgb(91, 55, 55);
+		font-style: normal;
+		font-weight: bold;
+		font-variant:small-caps;
+		font-size: 0.9em;
+		line-height: 2em;
+		font-family: 'Comic Sans MS', sanserif;
+		text-align: center;
+        width: 100%;
+        clear: both;
+		}
+footer::after {            
+    clear: both;
+    content: "";
+    display: table;
+    }
+    
+/* Pulldown Menu Styles, not completed */
+
+
+/* Mobile Styles: 0 to 480px  */
+ 
+@media only screen and (max-width: 480px)  {  
+    nav a {                                    
+           font-size: 1.2em;
+           line-height: 2em;
+          }
+    nav ul {    
+         list-style: none;
+         list-style-image: none;
+         width: 100%;
+        }
+        
+    nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+        background-color: rgb(31, 72, 61);
+        border-radius: 0px;                  
+        border: 1px double  rgb(100,150,150);
+        padding: 1px 1px;
+        }
+        
+    nav li a {
+        display: block;
+        color: white;
+        padding: 2px 2px;
+        text-decoration: none;
+        }
+        
+    nav a:hover {
+        color: black;
+        background-color: hsl(211, 50%, 80%);
+        }    
+         
+    aside {
+           display: none;
+          }
+          
+    html {
+           background-image:  none;
+          }
+          
+    body {
+          width: 100%;
+         }
+        
+    h1 {
+        font-weight: normal;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 0.7em;
+        margin: 0px;
+        text-align: center;
+        padding-top: 2px;
+        padding-right: 2px;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        text-shadow: 2px 0 2px green;           
+        background-color: rgb(91, 55, 55);
+        display: block;
+        clear: both;                           
+                                          
+       }
+       
+       img#OP_Map {
+            display: none;
+            }  
+            
+        nav ul {
+                display: block;
+                list-style: none;
+                list-style-image: none;
+                }
+        
+    footer {
+        -webkit-order: 100;
+        order: 100;
+    }
+}
+
+
+                                /*M6LO7 Formatting the table with CSS. */
+ /*    Table Styles   */
+ 
+    
+table.parks {
+    border: 2px solid rgb(100,150,150);         /* The table is formated to be in the center of the page with color scheme similar to the page. */
+    border-collapse: collapse;                 
+    margin: auto;                             
+    padding: 10px 0 5px 0;
+    width: 95%;
+    }
+
+table.parks td  {
+    border: 1px solid rgb(100,150,150);
+    padding: 2px; 
+    text-align: center;
+    }
+
+table.parks th  {
+    border: 1px solid rgb(100,150,150);
+    padding: 2px; 
+    text-align: center;
+   }
+
+table.parks caption {                       /* The caption and the footer are formatted in a similar style. */
+    background-color: rgb(100,150,150);
+    color: rgb(31, 72, 61);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    }
+
+table.parks tfoot {
+    background-color: rgb(100,150,150);
+    color: rgb(31, 72, 61);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+    }
+
+table  a {                            /* There are links for the headers inthe table tosections of the page. They are not set up yet. */
+        display: block;
+        color: white;
+        padding: 2px 2px;
+        text-decoration: none;
+        }
+        
+table a:hover {
+        color: black;
+        background-color: hsl(211, 50%, 80%);
+        }
+
+
+
+

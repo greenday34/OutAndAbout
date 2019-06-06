@@ -1,0 +1,86 @@
+@charset "utf-8";
+/*@font-face {
+    font-family: Nobile;}*/
+/*
+   CIS155 Spring 2019
+   Class Project V3
+   
+   TSS Typographic Style Sheet for Class Project, V3
+   Author: Francesca Avellina
+   Date: 2019-5-17
+   
+   Filename: op_flex.css
+*/
+/*====================
+    Base Flex Styles
+  ====================
+  */
+ /* {outline: 1px solid red;} */
+body {
+    display: -webkit-flex;          /* M5LO5 Demonstrate the use of flexboxes. The entire page body is displayed 
+                                        as a flexbox with horizonatl orientation. The overflow items wrap to a new row.
+                                        on a web page. The sections and images are displayed relative toone another and shrink 
+                                        and grow at a rate determined by the developer. */
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    }
+
+header, footer {
+    width: 100%;
+    }
+    
+h2 {
+    display: flex;
+    background: rgb(100,150,150);
+    }
+
+                           /* M5LO7 Demonstrate use of properties of flexbox containers.
+                              There are 3 sections that are arranged with the flex-direction: row.
+                              They are dispalyed side by side until the page is made smaller and then they 
+                              inherit the row wrap property from the body element and they are displayed vertically*/
+section {                                       
+    -webkit-flex: 1 1 300px;
+    flex: 1 1 300px; 
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    }
+    
+       /* M4LO8 Demonstrate the use of transformations for 2D or 3D images */
+
+img#dog1 {
+    display: flex;
+    flex-basis: 30%;
+    margin: auto;
+    clear: both;
+    
+    }  
+
+  img#dog2{
+    display: flex;
+    flex-basis: 30%;
+    margin: auto;
+    float: left;
+    -webkit-transform: rotateY(180deg);  /* M4LO8 Demonstrate the use of transformations for 2D or 3D images */
+    transform: rotateY(180deg);
+    }   
+
+
+                                /* M5LO6 Demonstrate use of properties of flexbox items. The articles have the flex properies
+                                to grow and shrink at the same rate and the articles' initial size is set to 100px. */
+                                        
+    
+article#left {
+    -webkit-flex: 1 1 100px;
+    flex: 1 1 100px;
+    }
+    
+article#middle {
+    -webkit-flex: 1 1 100px;
+    flex: 1 1 100px;
+    }
+   
