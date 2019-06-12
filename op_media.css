@@ -1,21 +1,18 @@
 @charset "utf-8";
+
 /*
    CIS155 Spring 2019
-   Class Project V3
+   Class Project V4
    
-   TSS Typographic Style Sheet for Class Project, V3
+   TSS Typographic Style Sheet for Class Project, V4
    Author: Francesca Avellina
-   Date: 2019-5-17
+   Date: 2019-6-2
    
    Filename: op_media.css
 */
   
-  
-  
-  /* Mobile Styles: 0 to 480px  */
-    
-  
-
+ /* Mobile Styles: 0 to 480px  */
+ 
 @media only screen and (max-width: 480px)  {  
     nav a {                                    
            font-size: 1.2em;
@@ -76,8 +73,7 @@
         background-color: rgb(91, 55, 55);
         display: block;
         clear: both;                           
-    }                                
-       }
+       }                                
        
        img#OP_Map {
             display: none;
@@ -92,52 +88,10 @@
     footer {
         -webkit-order: 100;
         order: 100;
-    }
+        }
 }
 
 
 
-/* Tablet Styles: 481px and greater */
-    
-   
- @media only screen and (min-width: 481px) {
-     
-    ul > li {
-         float: left;
-         position: relative;
-         width: 20%;
-        }
-     
-     ul {
-         box-shadow: rgb(51,51,51) 5px 5px 15px;
-         position: absolute;
-         width: 200%;
-         }
- } 
 
  
-   /* Desktop Styles: 769px and greater */
-    
-   
-@media only screen and (min-width:769px) {
-   
-   nav ul {
-        display: block;
-        list-style: none;
-        list-style-image: none;
-        float: left;
-        width: 100%;
-        margin: auto;
-       }
-     
-article {
-         float: left;
-         margin-left: 5px;
-         width: 55%;
-        }
-     
-aside {
-         float: left;
-         width: 50%;
-        }
-}

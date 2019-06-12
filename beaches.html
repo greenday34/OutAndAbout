@@ -2,64 +2,102 @@
 <html lang="en">
 <head>
    <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1" />   
+   <meta name="keywords" content="Olympic Peninsula, Parks, Washington Trails" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+   
    <!--
    CIS155 Spring 2019
-   Project V3
+   Project V4
    
    Author: Francesca Avellina
-   Date: 2019-5-17
+   Date: 2019-6-8
    
    Filename: beaches.html
    -->
+   
    <title>Beaches</title>
    
    <link href="op_reset.css" rel="stylesheet" />
    <link href="op_styles.css" rel="stylesheet" />
+   <link href="op_media.css"  rel="stylesheet" />
+    <link href="op_flex.css"  rel="stylesheet" />
 </head>
         
 <body>
     <header>
         <h1>Out and About on the Olympic Peninsula</h1>
-        <img class="images" id="top_pic" src="beach3.jpg" alt="West coast beach" />
-       
-		<nav id="places">
-			<ul>
+        <img class="images" id="top_pic" src="beach3a.jpg" alt="West coast beach" />
+             
+		<nav class="menu" id="main_menu">
+			<ul class="menu">
                 <li> <a href="index.html">Home</a></li>
-                <li> <a href="ports.html">Ports and Forts</a></li>
-                <li> <a href="parks.html">Parks</a></li>
-                <li> <a href="beaches.html">Beaches</a></li>
-                <li> <a href="dog.html">Dog Friendly</a></li>
+               <li> <a href="ports.html" class="submenuTitle">Ports and Forts &#9654;</a>
+                    <ul class="submenu">
+                        <li><a href="ports.html#PT">Port Townsend</a></li>
+                        <li><a href="ports.html#PA">Port Angeles</a></li>
+                        <li><a href="ports.html#PG">Port Gamble</a></li>
+                        <li><a href="ports.html#FF">Fort Flagler</a></li>
+                    </ul>
+                </li>
+                <li><a href="parks.html" class="submenuTitle">Parks &#9654;</a>
+                    <ul class="submenu">
+                        <li><a href="parks.html#NP">National Parks</a></li>
+                        <li><a href="parks.html#ST">State Parks</a></li>
+                        <li><a href="parks.html#CP">City Parks</a></li>
+                    </ul>
+                </li>
+                <li> <a href="beaches.html" class="submenuTitle">Beaches &#9654;</a>
+                    <ul class="submenu">
+                        <li><a href="beaches.html#WC">West Coast</a></li>
+                        <li><a href="beaches.html#HC">Hood Canal</a></li>
+                        <li><a href="beaches.html#PS">Puget Sound</a></li>
+                    </ul>
+                </li>
+                <li> <a href="dog.html" class="submenuTitle">Dog Friendly &#9654;</a>
+                    <ul class="submenu">
+                        <li><a href="dog.html#BE">Beaches</a></li>
+                        <li><a href="dog.html#TR">Trails</a></li>
+                        <li><a href="dog.html#DP">dog parks</a></li>
+                    </ul>
+                </li>
+                <li> <a href="planner_list.html">Adventure Plan</a></li>
                 <li> <a href="about.html">About</a></li> 
 			</ul>
-		</nav>
+        </nav>
     </header>   
-       
+
+<!-- M8LO7 Demonstrate the use of the <audio> element for embedding audio in a Web page -->
     <section>
-		<article>
-            <figure>
-                <img class="images" id="beach4" src="beach4.jpg" alt="Ruby Beach"/> 
-                
-                <figcaption>Ruby Beach</figcaption>
-            </figure>
-            <figure>
-                <img class="images" id="eagle" src="eagle1.jpg" alt="Seabeck"/>                 
-                <figcaption>Eagle at Seabeck Beach at extreme low tide</figcaption>
-            </figure>
-            <p id="gradient">A few things you might experience in the outdoors. Forest, trees, beaches, rocks, air, water, sunny, cloudy, windy, rainy, snowy, quiet, memories.
-                A few things you might experience in the outdoors. Forest, trees, beaches, rocks, air, water, sunny, cloudy, windy, rainy, snowy, quiet, memories.
-                A few things you might experience in the outdoors. Forest, trees, beaches, rocks, air, water, sunny, cloudy, windy, rainy, snowy, quiet, memories. 
-                A few things you might experience in the outdoors. Forest, trees, beaches, rocks, air, water, sunny, cloudy, windy, rainy, snowy, quiet, memories.                 </p>
+		<article id="#WC">
+            <audio src="nri-OceanOlympicNP.mp3" autoplay loop controls>
+            </audio>
+            <h4>source: "https://www.nps.gov/av/nri/avElement/nri-OceanOlympicNP.mp3"</h4>
+            <div id="gradient"> 
+                <figure>
+                    <img class="images" id="eagle" src="eagle1.jpg" alt="Seabeck"/>                 
+                    <figcaption>Eagle at Seabeck Beach at extreme low tide.</figcaption>
+                </figure>
+                <figure>
+                    <img class="images" id="beach4" src="background1.jpg" alt="Ruby Beach"/> 
+                    <figcaption id="WC">Ruby Beach on the West Coast.</figcaption>
+                </figure>
+                    
+                <figure id="HC">
+                    <img class="images" id="shell" src="beach4.jpg" alt="Hood Canal shoreline"/> 
+                    <figcaption>Hood Canal Shoreline Oyster with Barnicales.</figcaption>
+               </figure>
+                    <p>A few things you might experience in the outdoors. Forest, trees, beaches, 
+                       rocks, air, water, sunny, cloudy, windy, rainy, snowy, quiet, memories.
+                    </p>
+            </div>
         </article>
-	</section>  
+    </section>  
  	
 	<footer>
 	  <address>
-      Mosjon Mountain &#10045; 201 Pine Dr.  <!-- M1LO10 Demonstrate the use of special characters from extended character sets. -->
-      &#10045; Poulsbo, WA 98370 &#10045;
+      Mosjon Mountain &#10045; 201 Pine Dr. &#10045; Poulsbo, WA 98370 &#10045;
       </address>
-	 
-    </footer>
+	</footer>
    
 </body>
 </html>

@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*
+   CIS155 Spring 2019
+   Class Project V4
+   
+   TSS Typographic Style Sheet for Class Project, V4
+   Author: Francesca Avellina
+   Date: 2019-6-8
+   
+   Filename: op_animate.css
+
+/* Transition Styles */
+
+
+/* Key Frames Styles */ /* M8LO10 Demonstrate a CSS animation or transition.*/ 
+
+@keyframes walk {     /* animation for dog img */
+  0% {left: 10px; 
+        transform: rotate(0deg);}
+  10% {left: 25px;
+        transform: rotate(10deg);}
+  15% {left: 40px;
+        transform: rotate(0deg);}
+  20% {left: 50px;
+        transform: rotate(10deg);}
+  25% {left: 60px;
+        transform: rotate(0deg);}
+  30% {left: 75px;
+        transform: rotate(10deg);}
+  35% {left: 90px;
+        transform: rotate(0deg);}
+  40% {left: 105px;
+        transform: rotate(10deg);}
+  45% {left: 120px;
+        transform: rotate(0deg);}
+  50% {left: 135px;
+        transform: rotate(10deg);}
+  55% {left: 150px;
+        transform: rotate(0deg);}
+  60% {left: 170px;
+        transform: rotate(10deg);}
+  70% {left: 180px;
+        transform: rotate(0deg);}
+  75% {left: 190px;
+        transform: rotate(10deg);}
+  80% {left: 200px;
+        transform: rotate(0deg);}
+  85% {left: 210px;
+        transform: rotate(10deg);}
+  90% {left: 220px;
+        transform: rotate(0deg);}
+  95% { left: 230px;
+         transform: rotate(10deg);}
+  100% {left: 240px;
+        transform: rotate(0deg);}
+  }
+      
+
+
+    
+/* Animation Styles */ /* The dog img is animated. There is a 2 second delay and a slow start and finish. */
+
+img#dog7 {
+    animation:  walk 20s 2s ease-out infinite;
+   }
+
+input#startWalk:checked~img#dog7 {
+    animation-play-state: running;
+   }
+
+input#startWalk:not(:checked)~img#dog7 {
+    animation-play-state: paused;
+   }
+
+label#startWalk {
+    color: white;
+   }
+

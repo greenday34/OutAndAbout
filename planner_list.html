@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+   <meta name="keywords" content="Olympic Peninsula, Parks, Washington Trails" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <!--
+   CIS155 Spring 2019 
+   Project V4
+   
+   Olympic Peninsula Adventure
+   Author: Francesca Avellina
+   Date: 2019-6-2
+   
+   Filename: planner_list.html
+   -->
+   
+
+
+   <title>Plan for your time in the outdoors.</title>
+    <link href="op_reset.css" rel="stylesheet" />
+   <link href="op_styles.css" rel="stylesheet" />
+   <link href="op_media.css"  rel="stylesheet" />
+   <script src="cg_script.js"></script>
+</head>
+<body>
+    <h1>Out and About on the Olympic Peninsula</h1>
+    <header>
+		<nav class="menu" id="main_menu">
+			<ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ports.html" class="submenuTitle">Ports and Forts &#9654;</a>
+                    <ul class="submenu">
+                        <li><a href="ports.html#PT">Port Townsend</a></li>
+                        <li><a href="ports.html#PA">Port Angeles</a></li>
+                        <li><a href="ports.html#PG">Port Gamble</a></li>
+                        <li><a href="ports.html#FF">Fort Flagler</a></li>
+                    </ul>
+                </li>
+                <li><a href="parks.html" class="submenuTitle">Parks &#9654;</a>
+                    <ul class="submenu">
+                        <li><a href="parks.html#NP">National Parks</a></li>
+                        <li><a href="parks.html#ST">State Parks</a></li>
+                        <li><a href="parks.html#CP">City Parks</a></li>
+                    </ul>
+                </li>
+                <li><a href="beaches.html" class="submenuTitle">Beaches &#9654;</a>
+                    <ul class="submenu">
+                        <li><a href="beaches.html#WC">West Coast</a></li>
+                        <li><a href="beaches.html#HC">Hood Canal</a></li>
+                        <li><a href="beaches.html#PS">Puget Sound</a></li>
+                    </ul>
+                </li>
+                <li><a href="dog.html" class="submenuTitle">Dog Friendly &#9654;</a>
+                    <ul class="submenu">
+                        <li><a href="dog.html#BE">Beaches</a></li>
+                        <li><a href="dog.html#TR">Trails</a></li>
+                        <li><a href="dog.html#DP">dog parks</a></li>
+                    </ul>
+                </li>
+                <li><a href="planner_list.html">Adventure Plan</a></li>
+                <li><a href="about.html">About</a></li> 
+			</ul>
+        </nav>
+	</header>
+
+ <!-- M7LO5 Demonstrate the use of a text box in a form
+	M7LO6 Demonstrate the use of check boxes in a form
+ 	M7LO7 Demonstrate the use of radio buttons in a form
+ 	M7LO8 Demonstrate the use of a selection list in a form
+ 	M7LO9 Demonstrate the use of a text area in a form
+ 	M7LO10 Demonstrate the use of a submit button in a form 
+    The styles are in the op_styles.css file -->
+  
+    <section>
+        <h2>Plan your time in the outdoors on the Olympic Peninsula.</h2>
+        <h2>After you are done click 'Submit' or 'Reset' to start over.</h2>
+        <form id="PList" action="planner_list.html" method="post">
+            <fieldset>
+                <legend>Your Adventure</legend>
+                <label for="titleBox">Add your trip title</label>
+                <input name="title" id="titleBox" type="text" placeholder="Name for your trip."/>
+                <label for="startDate">Start Date</label>
+                <input name="start" id="startDate" type="date"/>
+                <label for="endDate">End Date</label>
+                <input name="end" id="endDate" type="date"/>
+            </fieldset>
+            <fieldset id="check">
+                <legend>Your Activity Preference</legend>
+                    <input type="checkbox" name="preference" value="hike">go hiking.<br>
+                    <input type="checkbox" name="preferenc" value="boat">take out my motor boating.<br>
+                    <input type="checkbox" name="preferenc" value="kayaking"> go kayaking.<br>
+                    <input type="checkbox" name="preferenc" value="camping"> try camping.<br>
+                    <input type="checkbox" name="preference" value="beach">find a beach.<br>
+                    <input type="checkbox" name="preferenc" value="dog"> take my dog with me.<br>
+            </fieldset>
+            <fieldset id="radio1">
+                <legend>Distance from home</legend>
+                    <input type="radio" name="distance" value="close">Close by and easy drive<br>
+                    <input type="radio" name="distance" value="far">Long drive, all day trip <br>
+                    <input type="radio" name="distance" value="overnight"> Overnight in camp or lodge<br>
+            </fieldset>        
+            <fieldset id="radio2">
+                <legend>Difficulty Level</legend>
+                <input type="radio" name="hike" value="short">Short, easy on the knees trails<br>
+                <input type="radio" name="hike" value="long">Long difficult trails<br>
+                <input type="radio" name="hike" value="climbing">Use of ropes and carabiners<br>
+            </fieldset>
+            <fieldset>
+                <legend>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</legend>
+                <label for="pickList1">Parks</label>
+                <select name="parkType" id="pickList1" size="6" multiple>
+                  <option value="pick1">Hurricane Ridge</option>
+                  <option value="pick2">Hoh Rain Forest</option>
+                  <option value="pick3">Lake Quilicene</option>
+                  <option value="pick4">Mt Olympus</option>
+                  <option value="pick5">Crescent Lake</option>
+                  <option value="pick6">Crescent Lake</option>
+                </select>
+                
+                 <label for="pickList2">Ports and Forts</label>
+                <select name="parkType" id="pickList2" size="6" multiple>
+                  <option value="pick1">Port Angeles</option>
+                  <option value="pick2">Port Gamble</option>
+                  <option value="pick3">Port Hadlock</option>
+                  <option value="pick4">Fort Warden</option>
+                  <option value="pick5">Fort Flagler</option>
+                  <option value="pick6">Fort Ward</option>
+                </select>
+                
+                <label for="Beaches">Beaches on the Olympic Peninsula</label>
+                <select name="beaches" id="Beaches" size="6" multiple>
+                      <option value="beach1">Ruby Beach</option>
+                      <option value="beach2">Seabeck</option>
+                      <option value="beach3">Dungeness Split</option>
+                      <option value="beach4">Hansville Lighthouse</option>
+                      <option value="beach5">Rio Alto</option>
+                </select>
+                
+                <label for="pickList3">Dog friendly</label>
+                <select name="parkType" id="pickList3" size="6" multiple>
+                  <option value="pick1">Silverdale Dog Park</option>
+                  <option value="pick2">Sequim Dog Park</option>
+                  <option value="pick3">Ocean Shores Off Leash Area</option>
+                  <option value="pick4">Water Front walk</option>
+                </select> 
+               
+            </fieldset>
+            <fieldset>
+                <label>Describe the perfect day out and about.</label>
+                <textarea name="dream" rows="10" cols="30">
+                </textarea>
+            </fieldset>
+                      
+            <fieldset id="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+        
+    </section>
+</body>

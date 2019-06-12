@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
    <meta charset="utf-8" />
+   <meta name="keywords" content="Olympic Peninsula, Parks, Washington Trails" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />  
+   
    <!--
    CIS155 Spring 2019
-   Project V3
+   Project V4
    
    Author: Francesca Avellina
-   Date: 2019-5-20
+   Date: 2019-6-8
    
    Filename: parks.html
    -->
@@ -16,75 +18,90 @@
    
    <link href="op_reset.css" rel="stylesheet" />
    <link href="op_styles.css" rel="stylesheet" />
+   <link href="op_media.css" rel="stylesheet" />
    
 </head>
         
 <body>
     <header>
-        <h1>Out and About on the Olympic Penisula</h1>
+        <h1>Out and About on the Olympic Peninsula</h1>
         <img class="images" id="top_pic" src="parks1.jpg" alt="Port Townsend" />
-        <nav class="menu" id="main_menu">
-			<ul>
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="ports.html">Ports and Forts</a></li>
-                <li> <a href="parks.html">Parks</a></li>
-                <li> <a href="beaches.html">Beaches</a></li>
-                <li> <a href="dog.html">Dog Friendly</a></li>
-                <li> <a href="about.html">About</a></li> 
+        
+       <nav class="menu" id="main_menu">
+			<ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ports.html" class="submenuTitle">Ports and Forts &#9654;</a>
+                    <ul class="submenu">
+                        <li><a href="ports.html#PT">Port Townsend</a></li>
+                        <li><a href="ports.html#PA">Port Angeles</a></li>
+                        <li><a href="ports.html#PG">Port Gamble</a></li>
+                        <li><a href="ports.html#FF">Fort Flagler</a></li>
+                    </ul>
+                </li>
+                <li><a href="parks.html" class="submenuTitle">Parks &#9654;</a>
+                    <ul class="submenu">
+                        <li><a href="parks.html#NP">National Parks</a></li>
+                        <li><a href="parks.html#ST">State Parks</a></li>
+                        <li><a href="parks.html#CP">City Parks</a></li>
+                    </ul>
+                </li>
+                <li><a href="beaches.html" class="submenuTitle">Beaches &#9654;</a>
+                    <ul class="submenu">
+                        <li><a href="beaches.html#WC">West Coast</a></li>
+                        <li><a href="beaches.html#HC">Hood Canal</a></li>
+                        <li><a href="beaches.html#PS">Puget Sound</a></li>
+                    </ul>
+                </li>
+                <li><a href="dog.html" class="submenuTitle">Dog Friendly &#9654;</a>
+                    <ul class="submenu">
+                        <li><a href="dog.html#BE">Beaches</a></li>
+                        <li><a href="dog.html#TR">Trails</a></li>
+                        <li><a href="dog.html#DP">dog parks</a></li>
+                    </ul>
+                </li>
+                <li><a href="planner_list.html">Adventure Plan</a></li>
+                <li><a href="about.html">About</a></li> 
 			</ul>
         </nav>
-       <!-- <nav class="menu" id="submenu">          M5LO4 Pull down Submenu not complete 
-            <ul>
-                <li>National Parks</li>
-                <li>State Parks</li>
-                <li>City Parks</li>
-            </ul>
-        
-        </nav> -->
+    
     </header>   
     
     <section class="table">
-    <table class="parks">                                                   <!--  M6LO3 This the table with 5 columns and 6 rows.  -->
-            <caption>Parks you can visit on the Olympic Penisula</caption>  <!-- It displays information about the Parks. -->
-                                                                            <!-- The caption of the table is followed by the thead --> 
-                                                                            <!--It is followed by the tfooter which is below the table. -->
+    <table class="parks">                                                   
+            <caption>Parks you can visit on the Olympic Peninsula</caption>  
+                                                                           
             <thead>
                 <th>&#x2600; &#x2600; &#x2600; </th>
                 <th><a href="#">National Parks</a></th>
+                   
                 <th><a href="#">State Parks</a></th>
+                    
                 <th><a href="#">County Parks</a></th>
+                    
                 <th><a href="#">City Parks</a></th>
-                
-                </tr>
             </thead>
-            <tfoot>
-                <tr>
-                    <td colspan="5">"There's a park for everyone."</td>  <!-- M6LO4 spanning multiple rows or columns. This a colspan in which the data cell spans across
-                                                                             5 columns to put the footer at the bottom of the table.-->
-                </tr>
-            </tfoot>
-            <tbody>                                                       <!-- M6LO3: Table 'Parks' continued. The tbody holds the data in the table. -->
+            <tbody>                                                       
                 <tr>
                     <th>Season</th>
-                    <td>Winter</td>
-                    <td>Spring</td>
-                    <td>Summer</td>
-                    <td>Fall</td>
+                    <td>Year round</td>
+                    <td>Year round</td>
+                    <td>Year round</td>
+                    <td>Year round</td>
                 </tr>
                 <tr>
                     
                     <th>Cost</th>                                         
-                    <td>$$$$$$$</td>                                       
-                    <td>$$$$$$$</td>                                       
-                    <td>$$$$$$$</td>
-                    <td>$$$$$$$</td>
+                    <td>$30/7 days, $55 annual pass</td>                       
+                    <td>$30 annual pass</td>                                       
+                    <td>mostly free</td>
+                    <td>mostly free</td>
                 </tr>
                 <tr>
                     <th>Range of Activities</th>
-                    <td>Hiking</td>
-                    <td>Biking</td>
-                    <td>Swimming</td>
-                    <td>Camping</td>
+                    <td>Hiking, camping</td>
+                    <td>Hiking, camping, boating</td>
+                    <td>Hiking, picnics</td>
+                    <td>Hiking, picnics</td>
                 </tr>
                 <tr>
                 <th>Safety</th>
@@ -92,28 +109,44 @@
                 </tr>
                 <tr>
                     <th>Animals</th>
-                    <td>Fox</td>
-                    <td>Bear</td>
-                    <td>Elk</td>
-                    <td>Fish</td>
+                    <td>Fox, Bear, Elk</td>
+                    <td>Fish, Bear</td>
+                    <td>Fox, Deer</td>
+                    <td>Fox, Deer</td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">"There's a park for everyone."</td>                                                      
+                </tr>
+            </tfoot>
          </table>
  	</section>  
-            
+ 
+<!-- M8LO8 Demonstrate the use of the <video> element for embedding video in a Web page-->
     <section>
-		<article>
-            <figure>
-                <img class="images" id="Hoh" src="rain_forest1.jpg" alt="Rain Forest"/> 
-                <figcaption>National Parks</figcaption>
-            </figure>
-            <p id="NP">A few things you might experience in the outdoors. Forest, trees, beaches, rocks, 
-               A few things you might experience in the outdoors. Forest, trees, beaches, rocks, 
-               A few things you might experience in the outdoors. Forest, trees, beaches, rocks, 
-               A few things you might experience in the outdoors. Forest, trees, beaches, rocks,                
-            </p>
-        </article>
-	</section>  
+         <aside id="NP">
+            <h2>The <em>Olympic National Park</em> has a million acres offering a variety of adventures.</h2>
+                <video controls poster="rain_forest1.jpg">
+                    <source src="Hoh.mp4" type="video/mp4" />
+                    <source src="Hoh.webm" type="video/webm" />
+                    <track kind="captions" label="Trees Captions" src="op_captions.vtt" default />
+                    <p><em>To play this video clip, yur browser needs to support HTML5.</em></p>
+                </video>
+        </aside> 
+        
+<!-- M8LO9  Demonstrate the use of the iframe element -->
+        <aside id="ST">
+            <h2>There is a wide range of acvitivies in the <em>Washington State Parks</em> on the Olympic Peninsula.</h2>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/guXsTQM7W3g" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                picture-in-picture" allowfullscreen>
+            </iframe>
+            <h2>This video is from "https://www.youtube.com/user/WashingtonStateParks".</h2>
+       </aside>
+        
+       
+    </section>    
   
 	<footer>
 	  <address>

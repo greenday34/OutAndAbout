@@ -2,78 +2,103 @@
 <html lang="en">
 <head>
    <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1" />   
+   <meta name="keywords" content="Olympic Peninsula, Parks, Washington Trails" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+   
    <!--
    CIS155 Spring 2019
-   Project V3
+   Project V4
    
    Author: Francesca Avellina
-   Date: 2019-5-17
+   Date: 2019-6-8
    
    Filename: index.html
    -->
+   
    <title>Olympic Peninsula Outdoor Adventure</title>
-   <link href="op_reset.css" rel="stylesheet" /> <!-- M3LO1 CSS reset styles. This code overrides default styles in older browsers to 
-                                                    render the element as the develop would like according to newer style rules. -->
+   <link href="op_reset.css" rel="stylesheet" />                                                     
    <link href="op_styles.css" rel="stylesheet" /> 
-  
+          
 </head>
         
 <body>
     <header>
         <h1>Out and About on the Olympic Peninsula</h1>
-        <img class="images" id="top_pic" src="olympics1.jpg" alt="Olympic Mountains" />
+        <img class="images" id="top_pic" src="top_pic1.jpg" alt="Olympic Mountains" />
         
         <!-- Navigation bar under top picture, displayed on each page -->   
-		<nav>
-			<ul>
-                <li> <a href="index.html">Home</a>
-                <li> <a href="ports.html">Ports and Forts</a></li>
-                <li> <a href="parks.html">Parks</a></li>
-                <li> <a href="beaches.html">Beaches</a></li>
-                <li> <a href="dog.html">Dog Friendly</a></li>
-                <li> <a href="about.html">About</a></li>
-            </ul>
+		<nav class="menu" id="main_menu">
+			<ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ports.html" class="submenuTitle">Ports and Forts &#9654;</a>
+                    <ul class="submenu">
+                        <li><a href="ports.html#PT">Port Townsend</a></li>
+                        <li><a href="ports.html#PA">Port Angeles</a></li>
+                        <li><a href="ports.html#PG">Port Gamble</a></li>
+                        <li><a href="ports.html#FF">Fort Flagler</a></li>
+                    </ul>
+                </li>
+                <li><a href="parks.html" class="submenuTitle">Parks &#9654;</a>
+                    <ul class="submenu">
+                        <li><a href="parks.html#NP">National Parks</a></li>
+                        <li><a href="parks.html#ST">State Parks</a></li>
+                        <li><a href="parks.html#CP">City Parks</a></li>
+                    </ul>
+                </li>
+                <li><a href="beaches.html" class="submenuTitle">Beaches &#9654;</a>
+                    <ul class="submenu">
+                        <li><a href="beaches.html#WC">West Coast</a></li>
+                        <li><a href="beaches.html#HC">Hood Canal</a></li>
+                        <li><a href="beaches.html#PS">Puget Sound</a></li>
+                    </ul>
+                </li>
+                <li><a href="dog.html" class="submenuTitle">Dog Friendly &#9654;</a>
+                    <ul class="submenu">
+                        <li><a href="dog.html#BE">Beaches</a></li>
+                        <li><a href="dog.html#TR">Trails</a></li>
+                        <li><a href="dog.html#DP">dog parks</a></li>
+                    </ul>
+                </li>
+                <li><a href="planner_list.html">Adventure Plan</a></li>
+                <li><a href="about.html">About</a></li> 
+			</ul>
         </nav>
 	</header> 
-   
-     <section>
-       
-	   <!--	M4LO7 Demonstrate the use of image maps, including determining x and y values. This is not finished since 
-            I want to have small pictures overlaying the map for the link.  -->
-        <aside>
-			<blockquote>
+    <section id="s1">
+         <aside>
+            <blockquote>
                 Everybody needs beauty as well as bread, places to play in and pray in, 
                 where nature may heal and give strength to body and soul. <br/><cite>John Muir</cite>
             </blockquote>
-        </aside>
-		<article>
-            <!-- M4LO1 Demonstrate the use of figure boxes. This is an element that is a container for images and illustrations.-->
-            <figure>
-                <img class="images" id="OP_Map" src="op_map.jpg" alt="Olympic Map" usemap="#op_map"/> 
-                <figcaption> Olympic Peninsula
-                <p>A few things you might experience in the outdoors. Forest, trees, beaches, rocks, air, water, sunny, cloudy, windy, rainy, snowy, quiet, memories.
-                   A few things you might experience in the outdoors. Forest, trees, beaches, rocks, air, water, sunny, cloudy, windy, rainy, snowy, quiet, memories.
-                   A few things you might experience in the outdoors. Forest, trees, beaches, rocks, air, water, sunny, cloudy, windy, rainy, snowy, quiet, memories. 
-                </p>
-                </figcaption>
-            </figure>
-                     
-          <map name="op_map">
-            <area shape="rect" coords="0,0,82,126" href="ports.html" alt="Port Townsend">
-            <area shape="rect" coords="25,100,55,300" href="parks.html" alt="Elk">
-            <area shape="rect" coords="45,100,125,300" href="beaches.html" alt="Elk">
-            <area shape="rect" coords="85,100,120,300" href="dog.html" alt="Elk">
-          </map>     
-            
-        </article>
-    </section>
-        
-	<footer>
-	  <address>
-      Mosjon Mountain &#10045; 201 Pine Dr.  <!-- M1LO10 Demonstrate the use of special characters from extended character sets. -->
-      &#10045; Poulsbo, WA 98370 &#10045;
-      </address> 
+        </aside> 
+    </section>        
+    <section id="s2">
+            <div id="map">
+                <figure>
+                    <img class="images" id="OP_Map" src="op_map.jpg" alt="Olympic Map" usemap="#op_map"/> 
+                    <figcaption> 
+                        Olympic Peninsula
+                    </figcaption>             
+                </figure>
+                      
+             <p>   <map name="op_map">
+                    <area shape="rect" coords="0,0,82,126" href="ports.html" alt="Port Townsend">
+                    <area shape="rect" coords="25,100,55,300" href="parks.html" alt="Parks to visit">
+                    <area shape="rect" coords="45,100,125,300" href="beaches.html" alt="Beaches">
+                    <area shape="rect" coords="85,100,120,300" href="dog.html" alt="Dog Friendly">
+                </map>  
+             </div> 
+      </section>
+      <section id="s3">The Olympic Peninsula is teaming with outdoor activities. Within a 2-3 hour drive there 
+               are hiking trails, boating facilities, beaches, biking trails, dog parks and many quiet contemplative 
+               spots with fantastic views.
+      </section>
+    
+    <footer>
+       <address>
+          Mosjon Mountain &#10045; 201 Pine Dr. 
+          &#10045; Poulsbo, WA 98370 &#10045;
+       </address> 
     </footer>
    
 </body>

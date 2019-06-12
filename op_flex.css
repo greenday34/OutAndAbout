@@ -1,21 +1,22 @@
 @charset "utf-8";
-/*@font-face {
-    font-family: Nobile;}*/
+
 /*
    CIS155 Spring 2019
    Class Project V3
    
-   TSS Typographic Style Sheet for Class Project, V3
+   Style Sheet for Class Project, V3
    Author: Francesca Avellina
    Date: 2019-5-17
    
    Filename: op_flex.css
 */
+
 /*====================
     Base Flex Styles
   ====================
-  */
+ */
  /* {outline: 1px solid red;} */
+ 
 body {
     display: -webkit-flex;          /* M5LO5 Demonstrate the use of flexboxes. The entire page body is displayed 
                                         as a flexbox with horizonatl orientation. The overflow items wrap to a new row.
@@ -31,10 +32,13 @@ header, footer {
     width: 100%;
     }
     
-h2 {
+section h2 {
     display: flex;
     background: rgb(100,150,150);
+    border-radius: 20px;
+    padding: 3px;
     }
+    
 
                            /* M5LO7 Demonstrate use of properties of flexbox containers.
                               There are 3 sections that are arranged with the flex-direction: row.

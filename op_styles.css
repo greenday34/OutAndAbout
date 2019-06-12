@@ -1,35 +1,33 @@
 @charset "utf-8";
+
 /*
    CIS155 Spring 2019
-   Class Project V3
+   Class Project V4
    
-   TSS Typographic Style Sheet for Class Project, V3
+   Style Sheet for Class Project, V4
    Author: Francesca Avellina
-   Date: 2019-5-17
+   Date: 2019-6-2
    
    Filename: op_styles.css
 */
 
-
 /* HTML and Body Styles */
+/* {outline: 1px solid red;} */
 
-  /* {outline: 1px solid red;} */
-
-html  {
-        background-image: url(rain_forest1.jpg);
-        background-size: 100%;
-        background-attachment: fixed;           
-      }
-   
-
+html {
+    background-image: url(rain_forest1.jpg);
+    background-size: 100%;
+    background-attachment: fixed;  
+    }
+     
 body {
-	   color: ivory;
-	   background-color: rgb(31, 72, 61);
-	   font-family: Palatino, serif;
-       width: 80%;
-       margin: auto;                               /* centering the body on the page */
-       box-shadow: rgb(217,217,217) 5px 5px 105px; 
-	 }
+	color: ivory;
+    background-color: rgb(31, 72, 61);
+    font-family: Palatino, serif;
+    width: 80%;
+    margin: auto;                               /* centering the body on the page */
+    box-shadow: rgb(217,217,217) 5px 5px 105px; 
+    }
 
 body header img {
     display: block;
@@ -53,11 +51,38 @@ h1 {
     background-color: rgb(91, 55, 55);
     display: block;
     clear: both;                       
-                                          
-   }
-   
-/* Navigation under header picture*/
+    }
+    
+section h2 {
+     text-align: center;
+     padding: 3px;
+    }
+section h2 {
+    display: block;
+    background: rgb(100,150,150);
+    border-radius: 20px;
+    padding: 3px;
+    width: 80%;
+    margin: 5px auto;
+    }
+section aside h2 {
+     text-align: center;
+     padding: 3px;
+    }
+ 
+h4 {
+    display: block;
+    background: rgb(100,150,150);
+    border-radius: 20px; 
+    font-size: 0.7em;
+    padding: 4px;
+    width: 40%;
+    margin: 5px;
+    text-align: center;
+        
+    }
 
+/* Navigation under header picture*/
 
 nav ul {
     display: block;
@@ -73,10 +98,10 @@ nav li {
     display: block;
     float: left;
     text-align: center;
-    width: 15%;
+    width: 14%;
     background-color: rgb(31, 72, 61);
     border-radius: 30px;                  
-    border: 5px double  rgb(100,150,150);
+    border: 5px double  rgb(121,171,221);
     padding: 2px 2px;
     }
     
@@ -86,38 +111,60 @@ nav li a {
     padding: 5px 5px;
     text-decoration: none;
     }
+    
 nav li a:hover {
     color: black;
-    background-color: hsl(211, 50%, 80%);
+    background-color: rgb(121,171,220);
     border-radius: 30px;       
     }
+        
 
+/* styles for figures, images and map image*/
 
-
-img#top_pic {
-    margin: 0 0 0;
-    height: 50%;
-    width: 100%;
-    }
-                               
-
-/* styles for figure and map image*/
-                       
+                      
 img#OP_Map {
     display: block;        
     float: left;                          
     margin: auto;
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 40%;
     opacity: 0.9;
     -webkit-filter: brightness(120%);
     filter: brightness(120%);
     }
-                           
+                       
+img#pa {
+    display: block;
+    float: left;
+    margin-left: 5px;
+    margin-right: 10px;
+    width: 30%;
+    height: 30%;
+    }
+    
 img#pt {
     display: block;
     float: left;
-    margin: auto;
+    margin-left: 5px;
+    margin-right: 10px;
+    width: 30%;
+    height: 30%;
+    }
+    
+img#pg {
+    display: block;
+    float: left;
+    margin: 5px;
+    margin-right: 10px;
+    width: 30%;
+    height: 30%;
+    }
+    
+img#ff {
+    display: block;
+    float: left;
+    margin: 5px;
+    margin-right: 10px;
     width: 30%;
     height: 30%;
     }
@@ -135,83 +182,93 @@ img#eagle {
     display: block;
     float: right;          
     margin: 10px;
-    width: 30%;
-    height: 30%;
+    width: 50%;
+    height: 50%;
+    transform: skewY(-5deg);  
+    }
+
+img#shell {
+    display: block;
+    float: right;          
+    margin: 10px;
+    width: 50%;
+    height: 50%;
     transform: skewY(-5deg);  
     }
     
-img#dog1 {
-    display: block;
-    float: left;
-    margin: auto;
-    width: 50%;
-    height: 50%;
-    }
-
 img#dog2 {
     display: block;
     float: left;
     margin: auto;
-    width: 25%;
-    height: 25%;
+    width: 70%;
+    height: 70%;
     }
     
 img#dog3 {
     display: block;
     float: left;
     margin: auto;
-    width: 25%;
-    height: 25%;
+    width: 100%;
+    height: 100%;
     }
     
 img#dog5 {
     display: block;
     float: left;
     margin: auto;
-    width: 25%;
-    height: 25%;
+    width: 100%;
+    height: 100%;
+    }
+    
+img#dog7 {
+    display: block;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 50%;
+    height: 75%;
+    border-radius: 30px;
+    box-shadow: rgb(121,171,220) 2px 2px 2px 2px;
     }
 
-img#dog6{
-    display: block;
-    float: right;
-    margin: auto;
-    width: 30%;
-    height: 30%;
-    -webkit-transform: rotateY(180deg);  
-    transform: rotateY(180deg);
-    }                                      
-                                         
-    
 figure {
-    display: table;
+    display: block;
     float: left;
     padding: 10px;  
-    clear: left; 
     text-align: left;
     font-style: italic;
     width: 100%;
+    margin: 5px 20px 20px 10px;
     }
+
 figcaption {
-    display: table-caption;
-    caption-side: top;
-    padding: 3px;
+    display: flex;
+    font-size: 1.3em;
+    color: rgb(220,240,220);
+    margin-left: 10px;
+    padding-left: 5px;
     }
     
-h2 {
-    width: 100%;
-	padding-top:10px;
-	padding-right: 20px;
-	padding-left: 20px;
-	padding-bottom: 0;
+section#s3 {
     float: left;
-    clear: both;
-	}
-	
+    width: 30%;
+	font-size: 1em;
+	font-family: 'Comic Sans MS', cursive;
+	color: rgba(12, 0, 0, 0.75);
+	background-color: rgb(220,240,220);
+	margin: 4px;
+	padding: 4px;
+    
+    }  
+
+section.mover {
+    width: 100%;
+    }      
 
 /* Aside and Blockquote Styles */
-
-                       
+                     
 aside blockquote {
     float: right;
     width: 30%;
@@ -219,7 +276,7 @@ aside blockquote {
 	font-family: 'Comic Sans MS', cursive;
 	color: rgba(12, 0, 0, 0.75);
 	background-color: rgb(220,240,220);
-	margin: 4px;
+	margin-right: 10px;
 	padding: 4px;
 	quotes: "\201C" "\201D";
 	}
@@ -230,18 +287,17 @@ blockquote::before {
 	content: open-quote;
 	font-family: 'Times New Roman', Times, serif;
     }
+    
 blockquote::after {
 	font-weight: bold;
 	font-size: 1.5em;
 	content: close-quote;
 	font-family: 'Times New Roman', Times, serif;
     }
-
-        
-p#gradient{
-        background: linear-gradient(45deg, green, blue, green);
-        }
-
+       
+div#gradient{
+    background: linear-gradient(45deg, green, blue, green);
+    }
 
 /*Footer Styles*/
 
@@ -258,13 +314,91 @@ footer address {
         width: 100%;
         clear: both;
 		}
+        
 footer::after {            
     clear: both;
     content: "";
     display: table;
     }
     
-/* Pulldown Menu Styles, not completed */
+/* Sub MenuStyles */
+
+ul.submenu {
+    width: auto;
+    color: black;
+    background-color: rgb(121,171,220);
+    border-radius: 30px;
+    }
+
+ul.submenu a {
+    display: block;
+    color: white;
+    padding: 1px 1px;
+    text-decoration: none;
+    }
+
+    
+/* Pulldown Menu Styles */
+
+ul.submenu {
+    display: none;
+    width: 100%;
+    }
+ 
+li.submenu {
+    position: absolute;
+    overflow: hidden;
+    padding: 1px 1px;
+    }
+
+a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+    display: block;
+    position: absolute;
+   }
+
+   
+/*Video styles*/
+/* M8LO12 Demonstrate how to format media with CSS, the size, border margins and shadow are styled*/
+video {
+    width: 80%;
+    height: 80%;
+    box-shadow: rgb(121,171,220) 5px 5px 10px;
+    display: block;
+    margin: 10px auto 20px auto;
+    padding: 2px;
+    border-color: rgb(91, 55, 55);
+    }
+
+/*	M8LO12 Demonstrate how to format media with CSS */
+    
+iframe {
+    box-shadow: rgb(121,171,220) 5px 5px 10px;
+    display: block;
+    margin: 10px auto 20px auto;
+    padding: 10px;
+    border-color: rgb(91, 55, 55);
+    }
+    
+
+/* Track Styles */ /* M8LO12 Demonstrate how to format media with CSS */
+::cue {
+    background: rgba(91, 55, 55);
+    color: rgb(255,255,255);
+    font: 1.5em serif;
+    display: block;
+    width: 45%;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 1.5em;
+    }
+    
+audio {
+    box-shadow: rgb(121,171,220) 5px 5px 10px 2px;
+    display: block;
+    margin: 2px;
+    width: 30%;
+    border-radius: 30px;
+    }
 
 
 /* Mobile Styles: 0 to 480px  */
@@ -299,7 +433,7 @@ footer::after {
         
     nav a:hover {
         color: black;
-        background-color: hsl(211, 50%, 80%);
+        background-color: rgb(141, 196, 245)/*hsl(211, 50%, 80%)*/;
         }    
          
     aside {
@@ -307,7 +441,7 @@ footer::after {
           }
           
     html {
-           background-image:  none;
+          background-image:  none;
           }
           
     body {
@@ -328,32 +462,30 @@ footer::after {
         background-color: rgb(91, 55, 55);
         display: block;
         clear: both;                           
-                                          
        }
        
-       img#OP_Map {
-            display: none;
-            }  
+    img#OP_Map {
+        display: none;
+        }  
             
-        nav ul {
-                display: block;
-                list-style: none;
-                list-style-image: none;
-                }
+    nav ul {
+        display: block;
+        list-style: none;
+        list-style-image: none;
+            }
         
     footer {
         -webkit-order: 100;
         order: 100;
-    }
-}
+           }
+     }
 
 
-                                /*M6LO7 Formatting the table with CSS. */
+/*M6LO7 Formatting the table with CSS. */
  /*    Table Styles   */
  
-    
-table.parks {
-    border: 2px solid rgb(100,150,150);         /* The table is formated to be in the center of the page with color scheme similar to the page. */
+ table.parks {
+    border: 2px solid rgb(100,150,150);        
     border-collapse: collapse;                 
     margin: auto;                             
     padding: 10px 0 5px 0;
@@ -372,7 +504,7 @@ table.parks th  {
     text-align: center;
    }
 
-table.parks caption {                       /* The caption and the footer are formatted in a similar style. */
+table.parks caption {                       
     background-color: rgb(100,150,150);
     color: rgb(31, 72, 61);
     padding-top: 5px;
@@ -398,9 +530,137 @@ table  a {                            /* There are links for the headers inthe t
         
 table a:hover {
         color: black;
-        background-color: hsl(211, 50%, 80%);
+        background-color: rgb(141, 196, 245);
         }
 
+/* Form Layout Styles */
+/* M7LO11 Demonstrate how to format a form with CSS */
 
+input[type='text']:focus, textarea:focus {
+  background-color: rgba(100, 180, 100,0.3);
+   }
+ 
+
+form#PList > fieldset {
+    background-color: rgb(141, 196, 245);
+    border-radius: 10px;
+    font-size: 1em;
+    padding: 10px;
+    margin: 10px;
+    color: rgb(31, 72, 61);
+    }
+
+label {
+   display: block;
+   float: left;
+   clear: left;
+   margin: 5px;
+   width: 150px;
+   border-radius: 10px;
+   padding: 5px;
+   text-align: right;
+   color: rgb(31, 72, 61);
+   }
+
+label#labelWalk {
+    color: white;
+   }
+
+input, select, textarea {
+   display: block;
+   float: left;
+   margin: 5px 0px;
+   width: 200px;
+   border-radius: 5px;
+   color: rgb(31, 72, 61);
+   }
+
+textarea {
+   height: 100px;
+   width: 300px;
+   }
+
+form p {
+   clear: left;
+   text-align: center;
+   padding-top: 40px;
+   }
+
+legend {
+    background-color: rgb(31, 72, 61);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    }
+
+input[type='checkbox']  {
+     float: left;
+     width: 3px;
+     padding: 5px;
+    }
+
+label.check {
+    display: block;
+    float: left;
+    clear: left;
+    margin: 5px;
+    width: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: left;
+    color: rgb(31, 72, 61);
+    }
+
+input[type='submit'] {
+   background-color: rgb(141, 196, 245);
+   color: black;
+   border-radius: 10px;
+   float: none;
+   display: inline;
+   font-size: 1.1em;
+   height: 30px;
+   width: 150px;
+   margin: 40px;
+   border: 5px double rgb(31, 72, 61);
+   }
+
+input[type='submit']:hover {
+   background-color: rgb(31, 72, 61);
+   color: white;
+   border-radius: 10px;
+   float: none;
+   display: inline;
+   font-size: 1.1em;
+   height: 30px;
+   width: 150px;
+   margin: 40px;
+   border: 5px double  rgb(141, 196, 245);
+   }
+
+input[type='reset'] {
+   background-color: rgb(141, 196, 245);
+   color: black;
+   border-radius: 10px;
+   float: none;
+   display: inline;
+   font-size: 1.1em;
+   height: 30px;
+   width: 150px;
+   margin: 4px;
+   border: 5px double  rgb(31, 72, 61);
+   }
+
+input[type='reset']:hover {
+   background-color: rgb(31, 72, 61);
+   color: white;
+   border-radius: 10px;
+   float: none;
+   display: inline;
+   font-size: 1.1em;
+   height: 30px;
+   width: 150px;
+   margin: 4px;
+   border: 5px double  rgb(141, 196, 245);
+   }
 
 
